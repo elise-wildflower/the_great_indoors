@@ -39,3 +39,5 @@ class Api::GroupsController < ApplicationController
         params.require(:group).permit(:name, :description)
     end
 end
+
+#Elise Was Here
