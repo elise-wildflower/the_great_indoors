@@ -4,7 +4,7 @@ const Groups = () => {
   return (
     <div>
       <h1>
-        Groups
+        Groups!!
       </h1>
     </div>
   );
