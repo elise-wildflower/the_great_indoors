@@ -25,10 +25,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
-<<<<<<< HEAD
           <Route exact path="/groups" component={Groups} />
-=======
->>>>>>> f326b8474f3469db0a5f6676d820101e68dd80e8
           <Route exact path="/groups/new" component={NewGroup} />
           <Route exact path="/groups/:id" component={Group} />
           <Route exact path="/groups/:id/edit" component={EditGroup} />
