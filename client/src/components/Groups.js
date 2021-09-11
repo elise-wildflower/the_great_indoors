@@ -53,7 +53,7 @@ const Groups = () => {
         
         <Card.Group itemsPerRow={3}>
         {renderGroups()}
-        </ Card.Group>
+        </Card.Group>
     </div>
   );
 };
