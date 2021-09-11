@@ -4,8 +4,8 @@ import { Button } from "semantic-ui-react";
 
 const Navbar = () => {
   return (
-    <div>
-      <h1> Navbar </h1>
+    <div style={{padding: "20px"}}>
+      <h1> The Great Indoors </h1>
       <Link to="/">
         <Button>Home</Button>
         </Link>

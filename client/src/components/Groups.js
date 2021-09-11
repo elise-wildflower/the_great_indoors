@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Group from "./Group";
 import { Link } from "react-router-dom";
-import { Button } from "semantic-ui-react";
+import { Button, Card } from "semantic-ui-react";
 
 const Groups = () => {
   const [groups, setGroups] = useState([]);
@@ -44,10 +44,16 @@ const Groups = () => {
 
     return (
     <div>
-        <Button style={{marginTop: "26px"}}>
-          <Link to="/groups/new">Add Shop</Link>
-         </Button>
+        <Link to="/groups/new">
+          <Button style={{marginTop: "26px"}}>
+          Add Shop
+          </Button>
+          </Link>
+         
+        
+        <Card.Group itemsPerRow={3}>
         {renderGroups()}
+        </ Card.Group>
     </div>
   );
 };

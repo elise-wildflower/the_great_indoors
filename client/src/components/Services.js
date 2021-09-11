@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Service from './Service';
+import { Button, Card } from "semantic-ui-react";
 
 const Services = () => {
   const [services, setServices] = useState([]);
@@ -44,8 +46,18 @@ const deleteService = async (id) => {
 
   return (
     <div>
-      <h1> Services </h1>
-        {renderServices()}
+      
+      <Link to="/services/new/"> 
+      <Button style={{marginTop: "26px"}}> 
+        Add Service Requisition 
+      </Button>
+      </Link> 
+
+      <h1> All Open Service Requisions </h1>
+      <Card.Group itemsPerRow={3}>
+      {renderServices()}
+      </Card.Group>
+
     </div>
   )
 };
