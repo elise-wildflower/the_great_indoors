@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import axios from 'axios';
 import Item from "./Item";
 import NewItem from "./NewItem";
-import { Button } from "semantic-ui-react";
+import { Button, Card } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 
 const Items = (props) => {
@@ -55,16 +55,18 @@ const Items = (props) => {
   
 
   return (
-    <div>
+    <div style={{margin: "20px"}}>
       <h1>
-        {group.name} Items
+        {group.name}
       </h1>
       <div>
         <Link to={`/groups/${props.match.params.group_id}/items/new`}>
-        <Button>Post an Item</Button>
+        <Button style={{margin: "20px"}}>Post an Item</Button>
         </Link>
       </div>
+      <Card.Group itemsPerRow={3}> 
       {renderItems()}
+      </Card.Group>
     </div>
   );
 };

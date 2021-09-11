@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
+import { Button } from "semantic-ui-react";
 
 const NewService = (props) => {
 const [serviceTitle, setServiceTitle] = useState("");
@@ -25,7 +26,7 @@ const submitHandler = async (e) => {
 
   return (
     <div>
-      <h1>NewService</h1>
+      <h1>Add Service Requisition</h1>
       <form onSubmit={submitHandler}>
         <p>Title:</p>
         <input value={serviceTitle}
@@ -43,8 +44,9 @@ const submitHandler = async (e) => {
         <input value={serviceSalary}
         onChange={(e) => setServiceSalary(e.target.value)}/>
 
-        <button>Submit!</button>
+        <br />
 
+        <button style={{marginTop: "26px" }}>Submit!</button>
 
       </form>
     </div>

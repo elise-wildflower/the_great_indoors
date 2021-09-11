@@ -39,7 +39,7 @@ const EditGroup = (props) => {
   
   
   return (
-    <div>
+    <div style={{margin: "20px"}}>
       <h1>
         Edit Shop
       </h1>
@@ -55,7 +55,7 @@ const EditGroup = (props) => {
 
         <br />
 
-        <button> Update Shop </button>
+        <button style={{margin: "20px"}}> Update Shop </button>
       </form>
     </div>
   );

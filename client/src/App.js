@@ -17,6 +17,7 @@ import Services from "./components/Services";
 import NewService from "./components/NewService";
 import Service from "./components/Service";
 import EditService from './components/EditService';
+import ShowService from './components/ShowService';
 
 function App() {
   return (
@@ -35,7 +36,7 @@ function App() {
           <Route exact path="/groups/:group_id/items/:id/edit" component={EditItem} />
           <Route exact path="/services" component={Services} />
           <Route exact path="/services/new" component={NewService} />
-          <Route exact path="/services/:id" component={Service} />
+          <Route exact path="/services/:id" component={ShowService} />
           <Route exact path="/services/:id/edit" component={EditService} />
         </Switch>
       </>
