@@ -3,8 +3,6 @@ import axios from 'axios';
 import Item from "./Item";
 
 const Items = (props) => {
-<<<<<<< HEAD
-=======
   const [group, setGroup] = useState({})
   const [items, setItems] = useState([])
   console.log(props)
@@ -50,7 +48,6 @@ const Items = (props) => {
       console.log(error)
     }
   }
->>>>>>> 7542054eb1a4fa474852d699f3432249e6b34caa
 
   return (
     <div>

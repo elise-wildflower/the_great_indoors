@@ -36,9 +36,8 @@ const Groups = () => {
           <Group group={group} deleteGroup={deleteGroup}/>
         </div>
       )
-
     })
-  }
+  };
 
 
     return (
