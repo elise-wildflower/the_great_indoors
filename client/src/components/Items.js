@@ -1,6 +1,9 @@
 import React, {useEffect, useState} from "react";
 import axios from 'axios';
 import Item from "./Item";
+import NewItem from "./NewItem";
+import { Button } from "semantic-ui-react";
+import { Link } from "react-router-dom";
 
 const Items = (props) => {
   const [group, setGroup] = useState({})
@@ -49,11 +52,18 @@ const Items = (props) => {
     }
   }
 
+  
+
   return (
     <div>
       <h1>
         {group.name} Items
       </h1>
+      <div>
+        <Link to={`/groups/${props.match.params.group_id}/items/new`}>
+        <Button>Post an Item</Button>
+        </Link>
+      </div>
       {renderItems()}
     </div>
   );
