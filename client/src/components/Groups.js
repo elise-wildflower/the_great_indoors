@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Group from "./Group";
+import { Link } from "react-router-dom";
+import { Button } from "semantic-ui-react";
 
 const Groups = () => {
   const [groups, setGroups] = useState([]);
@@ -42,9 +44,10 @@ const Groups = () => {
 
     return (
     <div>
-      <h1>
+        <Button style={{marginTop: "26px"}}>
+          <Link to="/groups/new">Add Shop</Link>
+         </Button>
         {renderGroups()}
-      </h1>
     </div>
   );
 };

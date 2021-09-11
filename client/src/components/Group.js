@@ -7,7 +7,14 @@ const Group = ( {group, deleteGroup} ) => {
     <div>
       <h1>{group.name}</h1>
       <p>{group.description}</p>
-      <Link to={`/groups/${group.id}/items`}>{`Go to ${group.name}`}</Link>
+     <Button>
+       <Link to={`/groups/${group.id}/items`}>{`Go to ${group.name}`}</Link>
+      </Button> 
+
+      <Button>
+      <Link to={`/groups/${group.id}/edit`}>{`Edit ${group.name}`}</Link>
+      </Button>
+      
       < Button basic color='red' onClick={() => deleteGroup(group.id)}>Delete</Button>
     </div>
   );
