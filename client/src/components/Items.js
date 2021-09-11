@@ -1,6 +1,9 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
+import axios from 'axios';
+import Item from "./Item";
 
-const Items = () => {
+const Items = (props) => {
+
   return (
     <div>
       <h1>
@@ -9,5 +12,4 @@ const Items = () => {
     </div>
   );
 };
-
 export default Items;
