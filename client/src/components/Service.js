@@ -14,7 +14,9 @@ const Service = ({service, deleteService}) => {
         <p>{`$${service.salary}`}</p>
         {/* <Link to={`/services/${service.id}`}>IDK</Link> */}
         <Button onClick={() => deleteService(service.id)}>Delete</Button>
-      
+        <Button>
+          <Link to={`/services/${service.id}/edit/`}>Edit Service</Link>
+        </Button>
     </div>
   );
 };
