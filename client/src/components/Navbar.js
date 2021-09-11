@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Button } from "semantic-ui-react";
 
 const Navbar = () => {
   return (
@@ -11,7 +12,7 @@ const Navbar = () => {
       <Link to="/about">
         <Button>About</Button>
         </Link>
-      <Link to="/groups">
+      <Link to="/groups/">
         <Button>Shop</Button>
         </Link>
       <Link to="/services">
