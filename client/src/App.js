@@ -24,19 +24,19 @@ function App() {
       <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/groups" component={Groups} />
           <Route exact path="/about" component={About} />
-          <Route path="/groups/new" component={NewGroup} />
-          <Route path="/groups/:id" component={Group} />
-          <Route path="/groups/:id/edit" component={EditGroup} />
-          <Route path="/groups/:group_id/items" component={Items} />
-          <Route path="/groups/:group_id/items/new" component={NewItem} />
-          <Route path="/groups/:group_id/items/:id" component={Item} />
-          <Route path="/groups/:group_id/items/:id/edit" component={EditItem} />
-          <Route path="/services" component={Services} />
-          <Route path="/services/new" component={NewService} />
-          <Route path="/services/:id" component={Service} />
-          <Route path="/services/:id/edit" component={EditService} />
+          <Route exact path="/groups" component={Groups} />
+          <Route exact path="/groups/new" component={NewGroup} />
+          <Route exact path="/groups/:id" component={Group} />
+          <Route exact path="/groups/:id/edit" component={EditGroup} />
+          <Route exact path="/groups/:group_id/items" component={Items} />
+          <Route exact path="/groups/:group_id/items/new" component={NewItem} />
+          <Route exact path="/groups/:group_id/items/:id" component={Item} />
+          <Route exact path="/groups/:group_id/items/:id/edit" component={EditItem} />
+          <Route exact path="/services" component={Services} />
+          <Route exact path="/services/new" component={NewService} />
+          <Route exact path="/services/:id" component={Service} />
+          <Route exact path="/services/:id/edit" component={EditService} />
         </Switch>
       </>
   );
