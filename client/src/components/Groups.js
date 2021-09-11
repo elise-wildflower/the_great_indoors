@@ -43,9 +43,11 @@ const Groups = () => {
 
 
     return (
-    <div>
+
+    <div style={{margin: "20px"}}>
         <Link to="/groups/new">
-          <Button style={{marginTop: "26px"}}>
+          <Button style={{margin: "20px"}}>
+
           Add Shop
           </Button>
           </Link>
@@ -53,7 +55,8 @@ const Groups = () => {
         
         <Card.Group itemsPerRow={3}>
         {renderGroups()}
-        </Card.Group>
+        </ Card.Group>
+
     </div>
   );
 };

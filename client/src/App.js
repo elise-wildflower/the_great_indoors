@@ -16,7 +16,7 @@ import EditItem from "./components/EditItem";
 import Services from "./components/Services";
 import NewService from "./components/NewService";
 import EditService from './components/EditService';
-import ShowService from "./components/ShowService";
+import ShowService from './components/ShowService';
 
 function App() {
   return (

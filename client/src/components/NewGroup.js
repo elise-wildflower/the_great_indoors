@@ -21,7 +21,7 @@ const NewGroup = (props) => {
   
   
   return (
-    <div>
+    <div style={{margin: "20px"}}>
       <h1>
         Add New Shop
       </h1>
@@ -37,7 +37,7 @@ const NewGroup = (props) => {
 
         <br />
 
-        <button> Add Shop </button>
+        <button style={{margin: "20px"}}> Add Shop </button>
       </form>
     </div>
   );
