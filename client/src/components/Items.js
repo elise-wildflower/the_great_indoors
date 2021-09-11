@@ -58,5 +58,4 @@ const Items = (props) => {
     </div>
   );
 };
-
 export default Items;
