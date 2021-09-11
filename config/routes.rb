@@ -4,8 +4,8 @@ Rails.application.routes.draw do
     resources :groups do
       resources :items
     end
-
     resources :services
   end
 
 end
+
