@@ -24,8 +24,8 @@ function App() {
       <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/groups" component={Groups} />
           <Route exact path="/about" component={About} />
+          <Route exact path="/groups" component={Groups} />
           <Route exact path="/groups/new" component={NewGroup} />
           <Route exact path="/groups/:id" component={Group} />
           <Route exact path="/groups/:id/edit" component={EditGroup} />
