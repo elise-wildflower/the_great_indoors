@@ -15,7 +15,6 @@ import NewItem from "./components/NewItem";
 import EditItem from "./components/EditItem";
 import Services from "./components/Services";
 import NewService from "./components/NewService";
-import Service from "./components/Service";
 import EditService from './components/EditService';
 import ShowService from './components/ShowService';
 
